@@ -24,5 +24,16 @@ namespace BarChartDemo
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Rectangle r1 = new Rectangle();
+            r1.Width = 150;
+            r1.Height = 30;
+            r1.Margin = new Thickness(20, 20, 0, 0);
+            r1.Stroke = new SolidColorBrush(Colors.Black);
+            r1.Fill = new SolidColorBrush(Color.FromArgb(127,255,0,0));
+            canvas.Children.Add(r1);
+        }
     }
 }
